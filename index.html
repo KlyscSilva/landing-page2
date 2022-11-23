@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./icons8-leitura-de-e-book-48.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dev Contábil</title>
+  </head>
+  <body>
+
+    <main class="caixa-superior">
+      <div class="header">
+        <h2 class="titulo-cabecalho">Dev Contábil</h2>
+        <a href="#titulo-inferior" class="link-cabecalho">Quem Somos</a>
+        <a href="#titulo-meio" class="link-cabecalho">Serviços</a>
+        <a class="link-cabecalho" onclick="chameOAbacate()">Contato</a>
+      </div>
+
+      <h1>Dev Contábil</h1>
+
+      <form
+        id="formulario-teste"
+        action="https://formsubmit.co/smatheussilva@hotmail.com"
+        method="post"
+      >
+        <h3 class="titulo-formulario">Entre em Contato</h3>
+
+        <label for="nome">Nome</label>
+        <input
+          type="text"
+          placeholder="Digite seu nome"
+          id="nome"
+          autofocus
+          name="Nome"
+          required
+          
+        />
+
+        <label for="Email">Email</label>
+        <input
+          type="text"
+          id="Email"
+          placeholder="Insira seu e-mail"
+          name="Email"
+          required
+        />
+
+        <label for="Fale">Fale Conosco</label>
+        <textarea
+          name="Respostas"
+          id="Fale"
+          placeholder="Fale sua dúvida"
+        ></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+
+    <h2 id="titulo-meio">Nossos Serviços</h2>
+    <section>
+      <div class="card">
+        <h3 class="titulo-card">Contabilidade Completa</h3>
+
+        <ul>
+          <li>Imposto de Renda</li>
+          <li>Imposto de Renda</li>
+          <li>Imposto de Renda</li>
+          <li>Imposto de Renda</li>
+          <li>Imposto de Renda</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3 class="titulo-card">Cuidamos de seu negocio</h3>
+
+        <ul>
+          <li>Imposto de Renda</li>
+          <li>Imposto de Renda</li>
+          <li>Imposto de Renda</li>
+          <li>Imposto de Renda</li>
+          <li>Imposto de Renda</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3 class="titulo-card">Cuidamos de Você</h3>
+
+        <ul>
+          <li>Imposto de Renda</li>
+          <li>Imposto de Renda</li>
+          <li>Imposto de Renda</li>
+          <li>Imposto de Renda</li>
+          <li>Imposto de Renda</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <h2 id="titulo-inferior">Sobre Nós</h2>
+
+      <p class="texto-inferior">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae,
+        corporis cum deserunt ipsum sed cumque ratione tempora hic eveniet eaque
+        dolorum magnam id, iure harum a. Voluptatem magnam laudantium adipisci.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ut cumque
+        nihil voluptatibus, libero deserunt saepe ex fugiat nostrum? Minus error
+        debitis ducimus veritatis nostrum adipisci nihil perspiciatis voluptatum
+        in? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
+        ipsam ratione a beatae harum veritatis odit temporibus consequuntur
+        officiis maiores explicabo doloremque recusandae, fugit repellendus
+        quaerat repudiandae blanditiis ut molestiae! Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Sapiente soluta porro ipsum laborum! Vitae
+        in quod earum possimus soluta animi. Explicabo, odit! Ea numquam
+        consectetur recusandae totam animi distinctio itaque.
+      </p>
+    </footer>
+  </body>
+
+  <script>
+    let formulario = document.getElementById("formulario-teste")
+
+function chameOAbacate() {
+  formulario.className = "mostrar-form";
+}
+  </script>
+</html>
